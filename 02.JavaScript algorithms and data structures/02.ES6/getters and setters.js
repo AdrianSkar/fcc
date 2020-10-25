@@ -3,13 +3,13 @@
 // Inside tracking in Celsius
 // class Thermostat {
 // 	constructor(f) {
-// 		this._temperature = (5 / 9 * (f - 32));
+// 		this._temp = (5 / 9 * (f - 32));
 // 	}
 // 	get temperature() {
-// 		return this._temperature;
+// 		return this._temp;
 // 	}
 // 	set temperature(val) {
-// 		this._temperature = val;
+// 		this._temp = val;
 // 	}
 // }
 
@@ -34,3 +34,12 @@ thermos.temperature = 26;
 temp = thermos.temperature; // 26 in Celsius
 
 console.log(temp);
+
+
+/*
+When you implement this, you will track the temperature inside the class in one scale, either Fahrenheit or Celsius.
+
+This is the power of a getter and a setter. You are creating an API for another user, who can get the correct result regardless of which one you track.
+
+In other words, you are abstracting implementation details from the user.
+*/
