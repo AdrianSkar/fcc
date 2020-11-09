@@ -4,7 +4,7 @@ function zeroArray(m, n) {
 	// Creates a 2-D array with m rows and n columns of zeroes
 	let newArray = [];
 	for (let i = 0; i < m; i++) {
-		let row = [];
+		let row = []; // Reinitializes the row on each iteration
 		// Adds the m-th row into newArray
 
 		for (let j = 0; j < n; j++) {
@@ -13,7 +13,6 @@ function zeroArray(m, n) {
 		}
 		// Pushes the current row, which now has n zeroes in it, to the array
 		newArray.push(row);
-		row = [];
 	}
 	return newArray;
 }
