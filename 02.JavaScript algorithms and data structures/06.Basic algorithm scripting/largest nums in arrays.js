@@ -27,5 +27,6 @@ console.log(largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [10
 
 function largestOfFourB(arr) {
 	return arr.map(Function.apply.bind(Math.max, null));
+	// note: https://stackoverflow.com/questions/22321769/function-prototype-apply-bind-usages
 }
 console.log(largestOfFourB([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
