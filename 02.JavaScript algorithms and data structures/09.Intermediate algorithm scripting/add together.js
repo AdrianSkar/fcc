@@ -10,10 +10,6 @@ function addTogether(x, y) {
 	// if (typeof x === 'number' && typeof y === 'number') return x + y;
 	// if (!y) return val => typeof val === 'number' ? x + val : undefined;
 
-	// if (typeof x !== 'number') return undefined;
-	// if (typeof x === 'number' && typeof y === 'number') return x + y;
-	// if (!y) return val => typeof val === 'number' ? x + val : undefined;
-
 	return (typeof x === 'number') ?
 		y ?
 			typeof y === 'number' ?
